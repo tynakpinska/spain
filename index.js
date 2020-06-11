@@ -1,6 +1,6 @@
 setInterval(() => {
-  let today = new Date();
-  const spain = new Date("October 1, 2020 00:00:00");
+  let today = Date.parse((new Date()));
+  const spain = Date.parse((new Date("October 1, 2020 16:00:00")));
   let left = spain - today;
   let leftParts = {
     days: Math.floor(left / (1000 * 60 * 60 * 24)),

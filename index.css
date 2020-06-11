@@ -48,6 +48,20 @@ p {
   font-size: 2rem;
 }
 
+.image {
+  position: absolute;
+  top: 50vh;
+  left: 0px;
+  width: 60vw;
+  height: 30vh;
+  background-image: url("./img/us.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  animation: ride 7s infinite;
+}
+
 @keyframes grow {
   0% {
     font-size: 4rem;
@@ -57,5 +71,51 @@ p {
   }
   100% {
     font-size: 4rem;
+  }
+}
+
+@keyframes ride {
+  0% {
+    left: -500px;
+  }
+  10% {
+    top: 40vh;
+    left: 10px;
+  }
+  20% {
+    transform: rotate(-3deg);
+    left: 100px;
+  }
+  30% {
+    transform: rotate(3deg);
+    left: 200px;
+  }
+  40% {
+    transform: rotate(-3deg);
+    left: 300px;
+  }
+  50% {
+    transform: rotate(3deg);
+    left: 400px;
+  }
+  60% {
+    transform: rotate(-3deg);
+    left: 500px;
+  }
+  70% {
+    transform: rotate(3deg);
+    left: 600px;
+  }
+  80% {
+    transform: rotate(-3deg);
+    left: 700px;
+  }
+  90% {
+    transform: rotate(3deg);
+    left: 800px;
+  }
+
+  100% {
+    left: 1500px;
   }
 }

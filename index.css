@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./img/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  background: rgba(202, 123, 41, 0.7);
+  text-align: center;
+}
+
+h1 {
+  color: #1d5304;
+  text-shadow: 0 0 5px aliceblue;
+  animation: grow 4s ease-in-out infinite;
+  padding: 5vh 0;
+}
+
+audio {
+  display: none;
+}
+
+.timer {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background: rgba(146, 1, 0, 0.7);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  color: #e4bca2;
+  font-size: 2rem;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 4rem;
+  }
+  50% {
+    font-size: 8rem;
+  }
+  100% {
+    font-size: 4rem;
+  }
+}

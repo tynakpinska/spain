@@ -15,7 +15,6 @@ body {
 
 header {
   width: 100vw;
-  height: 20vh;
   background: rgba(202, 123, 41, 0.7);
   text-align: center;
 }
@@ -23,7 +22,6 @@ header {
 h1 {
   color: #1d5304;
   text-shadow: 0 0 5px aliceblue;
-  animation: grow 4s ease-in-out infinite;
   padding: 5vh 0;
 }
 
@@ -60,18 +58,6 @@ p {
   background-repeat: no-repeat;
   background-color: transparent;
   animation: ride 7s infinite;
-}
-
-@keyframes grow {
-  0% {
-    font-size: 4rem;
-  }
-  50% {
-    font-size: 8rem;
-  }
-  100% {
-    font-size: 4rem;
-  }
 }
 
 @keyframes ride {
